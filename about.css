@@ -1,0 +1,95 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	text-transform: uppercase;
+}
+
+.navbarlist{
+	list-style-type: none;
+	display: inline-flex;
+}
+
+.navbarlist li{
+	padding: 10px;
+	flex-wrap: nowrap;
+}
+
+.navbarlist li:hover{
+	color: #ffffff;
+	background-color: red;
+	border-radius: 2px
+}
+
+.logo{
+	height: 50px;
+	width: 200px;
+}
+
+#imglogo{
+	padding: 10px 0px 0px 10px;
+}
+
+
+.navbar div{
+	flex: 0 0 50%;
+}
+
+.navbar{
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #787774;
+}
+
+.dummy{
+	height: 100%;
+	width: 100%;
+}
+
+.team_heading{
+	font-size: 20px;
+	color: #f54046;
+	text-align: center;
+	padding: 50px 10px 10px 10px;
+}
+
+.heading{
+	font-size: 16px;
+	color: #8a8a8a;
+	text-align: center;
+	padding: 10px;
+}
+
+.card{
+	text-align: center;
+	background-color:#c7c7c7;
+	border: 1px solid #706f6f;
+	border-radius: 4px; 
+	height: 200px;
+	width: 200px;
+	padding: 20px 20px 30px 20px;
+	margin: 20px;
+
+}
+.cards{
+	text-align: -webkit-center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.name_text{
+	padding: 10px;
+	vertical-align: center;
+}
+
+footer{
+	background-color: #000000;
+	color: #ffffff;
+	padding: 20px;
+}
+
+.content{
+	padding: 10px;
+}
