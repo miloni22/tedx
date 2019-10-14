@@ -17,9 +17,10 @@ body{
 }
 
 .navbarlist li:hover{
+	cursor: pointer;
 	color: #ffffff;
 	background-color: red;
-	border-radius: 2px
+	border-radius: 4px
 }
 
 .logo{
@@ -61,6 +62,63 @@ body{
 	padding: 10px;
 }
 
+.cards{
+	text-align: -webkit-center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.name_text{
+	padding: 10px;
+}
+
+footer{
+	position: absolute;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 20px;
+	bottom: 0;
+	height: 70px;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.content{
+	padding: 10px;
+}
+
+
+/*.flip-card{
+	width: 300px;
+	height: 300px;
+ 	perspective: 1000px;
+}
+
+.individulcard{
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .individualcard {
+  transform: rotateX(180deg);
+}
+
+
+.card, .cardtop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
 .card{
 	text-align: center;
 	background-color:#c7c7c7;
@@ -72,24 +130,60 @@ body{
 	margin: 20px;
 
 }
-.cards{
-	text-align: -webkit-center;
+
+.cardtop{
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+	background-color:#c7c7c7;
+	border: 1px solid #706f6f;
+	border-radius: 4px; 
+	height: 200px;
+	width: 200px;
+	padding: 20px 20px 30px 20px;
+	margin: 20px;
+	transform: rotateX(180deg);
 }
-.name_text{
-	padding: 10px;
-	vertical-align: center;
+*/
+
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+    padding: 20px;
+  margin: 20px;
 }
 
-footer{
-	background-color: #000000;
-	color: #ffffff;
-	padding: 20px;
+.individualcard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
 }
 
-.content{
-	padding: 10px;
+.flip-card:hover .individualcard {
+  transform: rotateX(180deg);
+}
+
+.card, .cardtop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card {
+  background-color: #bbb;
+  color: black;
+
+}
+
+.cardtop {
+  background-color: #c7c7c7;
+  color: white;
+  transform: rotateX(180deg);
 }
